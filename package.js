@@ -1,6 +1,6 @@
 Package.describe({
   name: 'ox2:text',
-  version: '0.2.0',
+  version: '0.3.0',
   // Brief, one-line summary of the package.
   summary: 'DO NOT USE',
   // URL to the Git repository containing the source code for this package.
@@ -18,12 +18,12 @@ Package.onUse(function(api) {
     api.versionsFrom('1.2.1');
     // Core
     api.use([
-      'templating'
+      'templating',
+      'less'
     ]);
     // 3rd party
     api.use([
-      'lauricio:less-autoprefixer@2.5.0_3',
-      'mquandalle:jade@0.4.5'
+      'mquandalle:jade@0.4.9'
     ]);
     api.addFiles('lib/oo-text.jade', C);
     api.addFiles('lib/oo-text.less', C);
